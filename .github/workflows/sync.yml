@@ -16,7 +16,7 @@ jobs:
       
       - name: Sync Fork
         run: |
-          git remote add upstream ${{ github.event.repository.parent.html_url }}
+          git remote add upstream https://github.com/clearbank/clearbank.github.io.git
           git fetch upstream
           git checkout main
           git merge upstream/main
